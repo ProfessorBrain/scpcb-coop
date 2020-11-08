@@ -7,9 +7,10 @@
 Global UserAgent$ = "SCPCB"	; What ever you'd like to name your application
 Global ResponseDelay% = 2000		; How many millisecs to wait for HTTP response
 Global NewLine$ = Chr(13) + Chr(10)	; Line break may differ
-Const RFDebugMode% = False				; Debug mode
+Const RFDebugMode% = True				; Debug mode
 
-Global UpdateCheckEnabled% = GetINIInt(OptionFile, "options", "check for updates")
+; Global UpdateCheckEnabled% = GetINIInt(OptionFile, "options", "check for updates")
+Global UpdateCheckEnabled% = False
 
 Type transporter
 	Field id%
